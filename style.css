@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "calibri";
+  font-size: large;
+  background-image: url(./img/bkg.png);
+}
+
+.containers {
+  height: 100vh;
+}
+
+.nav-bar {
+  display: grid;
+  height: 50px;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu {
+  display: grid;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+  padding-block: 0.3em;
+  font-weight: bold;
+}
+
+.menu ul li:hover a {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+  display: grid;
+  align-self: center;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+.main {
+  width: 90%;
+  height: calc(100vh - 50px);
+  margin: auto;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center start;
+}
+
+.logo {
+  font-size: 1.3rem;
+}

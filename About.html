@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <title>About</title>
+  </head>
+  <style>
+    .main-container {
+      height: calc(100vh - 50px);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-container div:nth-child(1),
+    .main-container div:nth-child(3) {
+      display: grid;
+      place-items: center center;
+    }
+
+    .box {
+      place-self: center;
+    }
+
+    .box h1 {
+      background-color: white;
+      padding: 1em;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .Images img {
+      height: 250px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="logo-container">
+          <h4 class="logo">CONTEMPORARY WORLD</h4>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="lesson.html">LESSON</a></li>
+            <li><a href="About.html">ABOUT US</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-container">
+        <div>
+          <div class="Images">
+            <img src="./img/jeddy.png" id="jeddy" />
+          </div>
+
+          <div class="Images">
+            <img src="./img/irish.png" id="irish" />
+          </div>
+        </div>
+
+        <div class="box">
+          <h1>"In partial fulfillment for the subject Contemporary World project under Professor Ian Balbalosa"</h1>
+        </div>
+
+        <div>
+          <div class="Images" id="mark">
+            <img src="./img/mark.png" />
+          </div>
+
+          <div class="Images" id="ury">
+            <img src="./img/ury.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("h4").click(function () {
+        $("a")[0].click();
+      });
+    });
+  </script>
+</html>
